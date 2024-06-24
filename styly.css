@@ -1,0 +1,177 @@
+*{
+	margin: 0px;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+   	color: #1d1e20;
+	font-size: 16px;
+}
+header{
+	background-color: white;
+	height: 70px;
+	width: 100%;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding-right: 5%;
+	padding-left: 5%;
+	position:fixed;
+	z-index: 1;
+}
+header ul{
+	width: 60%;
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
+	align-items: center;
+	/* margin-top: 25px; */
+}
+header>img{
+	width: 70px;
+}
+header .cart>img{
+	vertical-align:middle;
+}
+header .cart{
+	margin-left: 20px;
+	margin-right: 10%;
+}
+header .cart::after{
+	background: white;
+}
+header li{
+	cursor: pointer;
+}
+header li::after{
+	content: '';
+	background: black;
+	height: 1px;
+	width: 100%;
+	display: block;
+	opacity: 0;
+	margin-top: 3px;
+}
+header li:hover::after{
+	opacity: 1;
+}
+
+
+/*                   Intro             */
+.intro, .intro2{
+	margin-top: 50px;
+	color: white;
+	text-align: center;
+}
+
+.intro>p{
+	height: 65px;
+	font-weight: 400;
+ 	background-color:rgb(70, 21, 94);
+	/* background-color: #302357; */
+	align-content: center;
+}
+.intro .content{
+	width: 100%;
+	height: 670px;
+	background-image: url("./images/background1.avif");
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
+	align-content: center;
+	filter: brightness(96%);
+}
+.intro .content .heading{
+	font-size: 90px;
+	font-weight: 500;
+	margin-top: 50px;
+}
+.intro .content .caption{
+	font-size: 20px;
+	/* margin-top: 5px; */
+	margin-bottom: 30px;
+}
+.content button{
+	color:rgb(76, 31, 89);
+	font-size: 17px;
+	background-color: white;
+	padding: 20px 45px;
+	border: 1px solid white;
+	border-radius:10px;
+}
+
+/*                   bestseller            */
+
+.bestseller{
+	margin-bottom: 30px;
+}
+.bestseller img{
+	width: 290px;
+}
+.bestseller .heading{
+	height: 220px;
+	font-size: 50px;
+	font-weight: 500;
+	text-align: center;
+	align-content: center;
+}
+.bestseller .content{
+	display: flex;
+	justify-content: space-evenly;
+	margin-left: 2%;
+	margin-right: 2%;
+	text-align: center;
+}
+
+.bestseller .content .card .disc {
+	position: relative;
+}
+
+.bestseller .content .card .disc .sale{
+	color: white;
+	background-color: rgb(111, 23, 135);
+	position: absolute;
+	top:7px;
+	padding: 5px 10px;
+}
+
+.bestseller .content .card .name {
+	font-size: 25px;
+	font-weight: 500;
+	margin: 7px;
+}
+.bestseller .content .card .caption {
+	font-size: 18px;
+}
+.gray{
+	color: darkgray;
+}
+.bestseller .content .card .caption {
+	font-size: 18px;
+}
+.bestseller .content .card .caption span {
+	margin: 10px;
+	text-decoration: line-through;
+}
+
+/*            INTRO 2       */
+
+.intro2 .content{
+	width: 100%;
+	height: 670px;
+	background-image: url("./images/background2.avif");
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
+	align-content: center;
+	filter: brightness(96%);
+}
+.intro2 .content .heading{
+	font-size: 90px;
+	font-weight: 500;
+	/* margin-top: 50px; */
+}
+.intro2 .content .caption{
+	font-size: 20px;
+	/* margin-top: 5px; */
+	margin-bottom: 50px;
+}
