@@ -90,13 +90,14 @@ header li:hover::after{
 	/* margin-top: 5px; */
 	margin-bottom: 30px;
 }
-.content button{
+.content button, .signup input[type="submit"]{
 	color:rgb(76, 31, 89);
 	font-size: 17px;
 	background-color: white;
 	padding: 20px 45px;
 	border: 1px solid white;
 	border-radius:10px;
+	cursor: pointer;
 }
 
 /*                   bestseller            */
@@ -105,7 +106,8 @@ header li:hover::after{
 	margin-bottom: 30px;
 }
 .bestseller img{
-	width: 290px;
+	/* width: 290px; */
+	width: 100%;
 }
 .bestseller .heading{
 	height: 220px;
@@ -124,6 +126,7 @@ header li:hover::after{
 
 .bestseller .content .card .disc {
 	position: relative;
+	width: 90%;
 }
 
 .bestseller .content .card .disc .sale{
@@ -174,4 +177,145 @@ header li:hover::after{
 	font-size: 20px;
 	/* margin-top: 5px; */
 	margin-bottom: 50px;
+}
+
+/*              ABOUT           */
+
+.about{
+	margin-top: 120px;
+	margin-bottom: 100px;
+	display: flex;
+	justify-content:center;
+	width: 100%;
+}
+.about img{
+	/* width: 590px; */
+	width: 100%;
+}
+.about .card{
+	width: 45%;
+	margin: 7px;
+	
+}
+.about .heading{
+	font-size: 30px;
+	font-weight: 500;
+	margin: 25px 0px 10px;
+}
+.about .caption{
+	color:rgb(97, 96, 96);
+	font-weight: 400;
+	font-size: 18px;
+}
+.about button, .instgram button{
+	color:white;
+	font-size: 17px;
+	font-weight: 500;
+	background-color: rgb(76, 31, 89);;
+	padding: 20px 45px;
+	border: 1px solid rgb(76, 31, 89);;
+	border-radius:10px;
+	margin-top: 35px;
+	cursor: pointer;
+}
+
+/*            SIGNUP       */
+
+.signup{
+	color:white;
+	width: 100%;
+	height: 604px;
+	background-image: url("./images/signup-background.avif");
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
+	align-content: center;
+	filter: brightness(96%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.signup .heading{
+	font-size: 65px;
+	font-weight: 500;
+	margin-bottom: 18px;
+}
+.signup form{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+.signup form label{
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+.signup form input[type="email"]{
+	width: 360px;
+	border:0px;
+	padding: 18px;
+	outline: none;
+}
+.signup form input[type="email"]::placeholder{
+	color: rgb(201, 201, 201);
+	font-size: 15px;
+	font-weight: 100;
+}
+
+/*            INSTGRAM       */
+.instgram{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.instgram .heading{
+	font-size: 50px;
+	font-weight: 500;
+	margin-top: 70px;
+	margin-bottom: 30px;
+}
+.instgram .content{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.instgram .content img{
+	width:30%;
+	margin: 7px;
+}
+/*                 FOOTER              */
+
+footer{
+	width: 100%;
+	height: 275px;
+	background-color: rgb(243, 239, 239);
+	margin-top:100px ;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	filter: opacity(90%);
+}
+footer .container{
+	margin-left: 60px;
+}
+.container>img{
+	width: 80px;
+	margin-bottom:30px ;
+}
+.social img{
+	width: 25px;
+	margin-right:30px ;
+}
+.social img:hover{
+	filter: opacity(75%);
+}
+footer .contact{
+	margin-right: 180px;
+	display: flex;
+	flex-direction: column;
+}
+.contact a{
+	font-size: 18px;
+	color: black;
+	margin-bottom: 13px;
 }
